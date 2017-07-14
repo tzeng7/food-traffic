@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="muw-he-uw6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="xxi-Np-Vmk">
+            <objects>
+                <viewController id="muw-he-uw6" customClass="LoginViewController" customModule="food_traffic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="07Q-mF-hpM"/>
+                        <viewControllerLayoutGuide type="bottom" id="5cD-wD-mRd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K9p-8k-yfU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sOG-2z-CwR">
+                                <rect key="frame" x="0.0" y="196.5" width="375" height="174.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line Eater" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gK-Wb-GwD">
+                                        <rect key="frame" x="119" y="0.0" width="137" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                        <color key="textColor" red="0.90196078431372551" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewa-5k-MIY">
+                                        <rect key="frame" x="0.0" y="34.5" width="375" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="VCS-6b-qqz"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i54-8M-bjk">
+                                        <rect key="frame" x="40" y="134.5" width="295" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.66666666666666663" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2SK-Q8-wEL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                        <state key="normal" title="Register or Log In">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="muw-he-uw6" eventType="touchUpInside" id="uyH-Aa-YUt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="i54-8M-bjk" secondAttribute="trailing" constant="40" id="5Ig-DH-2eh"/>
+                                    <constraint firstItem="i54-8M-bjk" firstAttribute="leading" secondItem="sOG-2z-CwR" secondAttribute="leading" constant="40" id="BST-JP-Svy"/>
+                                    <constraint firstItem="ewa-5k-MIY" firstAttribute="width" secondItem="sOG-2z-CwR" secondAttribute="width" id="ayY-gs-vy7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sOG-2z-CwR" firstAttribute="centerX" secondItem="K9p-8k-yfU" secondAttribute="centerX" id="09n-Xx-el6"/>
+                            <constraint firstItem="sOG-2z-CwR" firstAttribute="centerY" secondItem="K9p-8k-yfU" secondAttribute="centerY" constant="-50" id="NmX-Y8-Vud"/>
+                            <constraint firstItem="sOG-2z-CwR" firstAttribute="width" secondItem="K9p-8k-yfU" secondAttribute="width" id="Sl5-IY-M3f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="i54-8M-bjk" id="PZU-19-AYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9TM-eh-EwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="149.77511244377811"/>
+        </scene>
+    </scenes>
+</document>

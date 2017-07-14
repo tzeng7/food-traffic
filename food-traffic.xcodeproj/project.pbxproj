@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A10958E1F17E30900AC17F5 /* Businesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A10958D1F17E30900AC17F5 /* Businesses.storyboard */; };
+		0A1095921F17E71800AC17F5 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1095911F17E71800AC17F5 /* BusinessCell.swift */; };
+		0A1095951F17EF5400AC17F5 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1095941F17EF5400AC17F5 /* Business.storyboard */; };
+		0A1095971F18858A00AC17F5 /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1095961F18858A00AC17F5 /* BusinessesViewController.swift */; };
+		0A1095991F18880300AC17F5 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1095981F18880300AC17F5 /* Business.swift */; };
+		0A1095A01F18888200AC17F5 /* YelpAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10959F1F18888200AC17F5 /* YelpAPIService.swift */; };
 		0A131D141F1738DA006FC6E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131D131F1738DA006FC6E3 /* AppDelegate.swift */; };
 		0A131D161F1738DA006FC6E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131D151F1738DA006FC6E3 /* ViewController.swift */; };
 		0A131D191F1738DA006FC6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D171F1738DA006FC6E3 /* Main.storyboard */; };
 		0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */; };
 		0A131D1E1F1738DA006FC6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1C1F1738DA006FC6E3 /* LaunchScreen.storyboard */; };
+		0A9D18311F173978009F5B61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D18301F173978009F5B61 /* Login.storyboard */; };
+		0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18341F1739E9009F5B61 /* LoginViewController.swift */; };
+		0A9D183B1F173D01009F5B61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D183A1F173D01009F5B61 /* GoogleService-Info.plist */; };
+		0A9D183E1F174701009F5B61 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D183D1F174701009F5B61 /* Search.storyboard */; };
+		0A9D18431F174C24009F5B61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18421F174C24009F5B61 /* SearchViewController.swift */; };
+		5E7EB0E6E8ED097F67D1F01F /* Pods_food_traffic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A10958D1F17E30900AC17F5 /* Businesses.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Businesses.storyboard; sourceTree = "<group>"; };
+		0A1095911F17E71800AC17F5 /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		0A1095941F17EF5400AC17F5 /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
+		0A1095961F18858A00AC17F5 /* BusinessesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessesViewController.swift; sourceTree = "<group>"; };
+		0A1095981F18880300AC17F5 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		0A10959F1F18888200AC17F5 /* YelpAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpAPIService.swift; sourceTree = "<group>"; };
 		0A131D101F1738DA006FC6E3 /* food-traffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "food-traffic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A131D131F1738DA006FC6E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A131D151F1738DA006FC6E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,14 @@
 		0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A131D1D1F1738DA006FC6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A131D1F1F1738DA006FC6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9D18301F173978009F5B61 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0A9D18341F1739E9009F5B61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A9D183A1F173D01009F5B61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A9D183D1F174701009F5B61 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		0A9D18421F174C24009F5B61 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3625DB6C9706E41BF807F57F /* Pods-food-traffic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.debug.xcconfig"; sourceTree = "<group>"; };
+		43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_traffic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57E29A0C65D3C35C1E51C30 /* Pods-food-traffic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.release.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E7EB0E6E8ED097F67D1F01F /* Pods_food_traffic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1095931F17E7B800AC17F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A1095911F17E71800AC17F5 /* BusinessCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0A10959A1F18880800AC17F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A1095981F18880300AC17F5 /* Business.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0A10959E1F18887500AC17F5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0A10959F1F18888200AC17F5 /* YelpAPIService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		0A131D071F1738DA006FC6E3 = {
 			isa = PBXGroup;
 			children = (
 				0A131D121F1738DA006FC6E3 /* food-traffic */,
 				0A131D111F1738DA006FC6E3 /* Products */,
+				48F078A750C3CA6FEF70BCB5 /* Pods */,
+				63713DE8FB3B2B030B487923 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +107,74 @@
 		0A131D121F1738DA006FC6E3 /* food-traffic */ = {
 			isa = PBXGroup;
 			children = (
+				0A10959E1F18887500AC17F5 /* Service */,
+				0A10959A1F18880800AC17F5 /* Models */,
 				0A131D131F1738DA006FC6E3 /* AppDelegate.swift */,
-				0A131D151F1738DA006FC6E3 /* ViewController.swift */,
-				0A131D171F1738DA006FC6E3 /* Main.storyboard */,
+				0A1095931F17E7B800AC17F5 /* Views */,
+				0A9D18411F174C00009F5B61 /* Extensions */,
+				0A9D18371F173CCB009F5B61 /* View Controllers */,
+				0A9D18361F173CC4009F5B61 /* Storyboards */,
 				0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */,
-				0A131D1C1F1738DA006FC6E3 /* LaunchScreen.storyboard */,
-				0A131D1F1F1738DA006FC6E3 /* Info.plist */,
+				0A9D183C1F173D0E009F5B61 /* Supporting */,
 			);
 			path = "food-traffic";
+			sourceTree = "<group>";
+		};
+		0A9D18361F173CC4009F5B61 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0A9D183D1F174701009F5B61 /* Search.storyboard */,
+				0A131D171F1738DA006FC6E3 /* Main.storyboard */,
+				0A9D18301F173978009F5B61 /* Login.storyboard */,
+				0A10958D1F17E30900AC17F5 /* Businesses.storyboard */,
+				0A1095941F17EF5400AC17F5 /* Business.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0A9D18371F173CCB009F5B61 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A9D18341F1739E9009F5B61 /* LoginViewController.swift */,
+				0A131D151F1738DA006FC6E3 /* ViewController.swift */,
+				0A9D18421F174C24009F5B61 /* SearchViewController.swift */,
+				0A1095961F18858A00AC17F5 /* BusinessesViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0A9D183C1F173D0E009F5B61 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0A131D1C1F1738DA006FC6E3 /* LaunchScreen.storyboard */,
+				0A131D1F1F1738DA006FC6E3 /* Info.plist */,
+				0A9D183A1F173D01009F5B61 /* GoogleService-Info.plist */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		0A9D18411F174C00009F5B61 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		48F078A750C3CA6FEF70BCB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3625DB6C9706E41BF807F57F /* Pods-food-traffic.debug.xcconfig */,
+				A57E29A0C65D3C35C1E51C30 /* Pods-food-traffic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63713DE8FB3B2B030B487923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A131D221F1738DA006FC6E3 /* Build configuration list for PBXNativeTarget "food-traffic" */;
 			buildPhases = (
+				E9EB09BCC2D0F8ED9EC3C86F /* [CP] Check Pods Manifest.lock */,
 				0A131D0C1F1738DA006FC6E3 /* Sources */,
 				0A131D0D1F1738DA006FC6E3 /* Frameworks */,
 				0A131D0E1F1738DA006FC6E3 /* Resources */,
+				9F216DB6E5C5EA2220B52EBF /* [CP] Embed Pods Frameworks */,
+				3BF628BE1FC64CC16B621C9E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,19 +239,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A10958E1F17E30900AC17F5 /* Businesses.storyboard in Resources */,
+				0A9D18311F173978009F5B61 /* Login.storyboard in Resources */,
 				0A131D1E1F1738DA006FC6E3 /* LaunchScreen.storyboard in Resources */,
+				0A9D183B1F173D01009F5B61 /* GoogleService-Info.plist in Resources */,
 				0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */,
+				0A9D183E1F174701009F5B61 /* Search.storyboard in Resources */,
+				0A1095951F17EF5400AC17F5 /* Business.storyboard in Resources */,
 				0A131D191F1738DA006FC6E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BF628BE1FC64CC16B621C9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F216DB6E5C5EA2220B52EBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9EB09BCC2D0F8ED9EC3C86F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A131D0C1F1738DA006FC6E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1095921F17E71800AC17F5 /* BusinessCell.swift in Sources */,
+				0A1095991F18880300AC17F5 /* Business.swift in Sources */,
+				0A9D18431F174C24009F5B61 /* SearchViewController.swift in Sources */,
+				0A1095971F18858A00AC17F5 /* BusinessesViewController.swift in Sources */,
+				0A1095A01F18888200AC17F5 /* YelpAPIService.swift in Sources */,
+				0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */,
 				0A131D161F1738DA006FC6E3 /* ViewController.swift in Sources */,
 				0A131D141F1738DA006FC6E3 /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +433,7 @@
 		};
 		0A131D231F1738DA006FC6E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3625DB6C9706E41BF807F57F /* Pods-food-traffic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "food-traffic/Info.plist";
@@ -270,6 +446,7 @@
 		};
 		0A131D241F1738DA006FC6E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57E29A0C65D3C35C1E51C30 /* Pods-food-traffic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "food-traffic/Info.plist";
@@ -299,6 +476,7 @@
 				0A131D241F1738DA006FC6E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

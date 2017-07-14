@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dfA-uE-FT6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="feO-Vt-KBv">
+            <objects>
+                <viewController id="dfA-uE-FT6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZVV-tc-IcI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ugm-Gq-QNz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Na-VW-gdG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Is it busy?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDo-hD-cPp">
+                                <rect key="frame" x="50" y="351" width="275" height="28"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.66666666669999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x8E-xj-Tt9">
+                                <rect key="frame" x="67" y="96" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.45048541269999998" blue="0.42273036980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYi-bj-3Bt">
+                                <rect key="frame" x="50" y="414" width="275" height="30"/>
+                                <color key="backgroundColor" red="0.41568627450980389" green="0.92156862745098034" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AjF-pB-ejK"/>
+                                </constraints>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oe-DO-DjZ">
+                                <rect key="frame" x="50" y="466" width="275" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NLr-Gi-mPS"/>
+                                </constraints>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouI-l7-9y8">
+                                <rect key="frame" x="66" y="57" width="243" height="28"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zDo-hD-cPp" firstAttribute="leading" secondItem="5Na-VW-gdG" secondAttribute="leading" constant="50" id="MJ3-kw-zR4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ouI-l7-9y8" secondAttribute="trailing" constant="50" id="MJU-aa-UZO"/>
+                            <constraint firstItem="9oe-DO-DjZ" firstAttribute="leading" secondItem="5Na-VW-gdG" secondAttribute="leading" constant="50" id="PDu-A8-pMs"/>
+                            <constraint firstAttribute="trailing" secondItem="zDo-hD-cPp" secondAttribute="trailing" constant="50" id="VCg-L3-fYQ"/>
+                            <constraint firstItem="cYi-bj-3Bt" firstAttribute="leading" secondItem="5Na-VW-gdG" secondAttribute="leading" constant="50" id="WV1-uF-t6z"/>
+                            <constraint firstItem="ouI-l7-9y8" firstAttribute="centerX" secondItem="5Na-VW-gdG" secondAttribute="centerX" id="hUC-WS-2p5"/>
+                            <constraint firstItem="ouI-l7-9y8" firstAttribute="leading" secondItem="5Na-VW-gdG" secondAttribute="leadingMargin" constant="50" id="meN-UY-sdI"/>
+                            <constraint firstAttribute="trailing" secondItem="9oe-DO-DjZ" secondAttribute="trailing" constant="50" id="nON-ya-fzz"/>
+                            <constraint firstItem="zDo-hD-cPp" firstAttribute="centerX" secondItem="5Na-VW-gdG" secondAttribute="centerX" id="pve-a7-swu"/>
+                            <constraint firstAttribute="trailing" secondItem="cYi-bj-3Bt" secondAttribute="trailing" constant="50" id="wDA-aT-9q9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PN-Xh-3m3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3" y="-70"/>
+        </scene>
+    </scenes>
+</document>
