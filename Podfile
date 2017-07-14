@@ -12,4 +12,6 @@ pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
 pod ‘FontAwesome.swift’
+pod 'Alamofire', '~> 4.4’
+pod 'SwiftyJSON’
 end
