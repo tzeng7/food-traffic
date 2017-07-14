@@ -19,6 +19,7 @@
 		0A131D191F1738DA006FC6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D171F1738DA006FC6E3 /* Main.storyboard */; };
 		0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */; };
 		0A131D1E1F1738DA006FC6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1C1F1738DA006FC6E3 /* LaunchScreen.storyboard */; };
+		0A7899CF1F18B53400EF1784 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */; };
 		0A9D18311F173978009F5B61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D18301F173978009F5B61 /* Login.storyboard */; };
 		0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18341F1739E9009F5B61 /* LoginViewController.swift */; };
 		0A9D183E1F174701009F5B61 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D183D1F174701009F5B61 /* Search.storyboard */; };
@@ -41,6 +42,7 @@
 		0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A131D1D1F1738DA006FC6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A131D1F1F1738DA006FC6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
 		0A9D18301F173978009F5B61 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0A9D18341F1739E9009F5B61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A9D183D1F174701009F5B61 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				0A10959F1F18888200AC17F5 /* YelpAPIService.swift */,
+				0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				0A1095971F18858A00AC17F5 /* BusinessesViewController.swift in Sources */,
 				0A1095A01F18888200AC17F5 /* YelpAPIService.swift in Sources */,
 				0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */,
+				0A7899CF1F18B53400EF1784 /* AccessTokenAdapter.swift in Sources */,
 				0A131D161F1738DA006FC6E3 /* ViewController.swift in Sources */,
 				0A131D141F1738DA006FC6E3 /* AppDelegate.swift in Sources */,
 			);

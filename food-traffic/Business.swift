@@ -12,7 +12,7 @@ class Business {
     //variables for everything that i need (all optionals)
     var id: String?
     
-    func getID() -> String {
+    func getID() -> String? {
         return id
     }
     func setID(id: String) -> Void {
