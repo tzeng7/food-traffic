@@ -7,18 +7,27 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-class Business {
+struct Business {
     //variables for everything that i need (all optionals)
-    var id: String?
+    var id: String
+    var is_closed: Bool
+    var image_url: String
+    var location: String
+    var distance: Double
+
     
-    func getID() -> String? {
-        return id
+    init (json: JSON) {
+        self.id = json["name"].stringValue
+        self.is_closed = json["is_closed"].boolValue
+        self.image_url = json["image_url"].stringValue
+        self.location = "\(json["location"]["display_address"][0]), \(json["location"]["display_address"][1])"
+        self.distance = json["distance"].doubleValue
     }
-    func setID(id: String) -> Void {
-        self.id = id
-    }
     
     
+    
+   // for busy places - maybe implement google api but for smaller places - rely on user interaction
     
 }

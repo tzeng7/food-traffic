@@ -110,9 +110,9 @@
 		0A131D121F1738DA006FC6E3 /* food-traffic */ = {
 			isa = PBXGroup;
 			children = (
+				0A131D131F1738DA006FC6E3 /* AppDelegate.swift */,
 				0A10959E1F18887500AC17F5 /* Service */,
 				0A10959A1F18880800AC17F5 /* Models */,
-				0A131D131F1738DA006FC6E3 /* AppDelegate.swift */,
 				0A1095931F17E7B800AC17F5 /* Views */,
 				0A9D18411F174C00009F5B61 /* Extensions */,
 				0A9D18371F173CCB009F5B61 /* View Controllers */,

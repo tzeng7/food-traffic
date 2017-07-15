@@ -41,12 +41,20 @@ class YelpAPIService {
                     // Do what you need to with JSON here!
                     // The rest is all boiler plate code you'll use for API requests
                     print(json)
-                    
                     // Do conversion using json
                     //Either write the converter here or do it elsewhere.
 //                    let businesses:[Business] = convert(json)
-//                    
+//
 //                    completion(businesses)
+                    let businessData = json["businesses"].arrayValue
+                    //print (businessData)
+                    var businesses: [Business] = []
+                    for business in businessData {
+                        let business = Business(json: business)
+                        businesses.append(business)
+                    }
+                    print(businesses)
+                    
                     
                 }
             case .failure(let error):
@@ -55,7 +63,6 @@ class YelpAPIService {
             
         }
     }
-    
     
     //Write a parser/converter
     

@@ -10,7 +10,7 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
-    var arr = ["Tacos?", "Asian?", "Boba?", "Fast Food?", "Italian?"]
+    var arr = ["Tacos?", "Boba?", "Fast Food?", "Italian?", "Indian?", "Mediterranean?", "Thai?", "Japanese?", "Mexican?", "Chinese?"]
     var index = 0
 
     @IBOutlet weak var suggestionLabel: UILabel!
@@ -36,7 +36,7 @@ class SearchViewController: UIViewController {
     }
     
     func fadeOut() {
-        self.suggestionLabel.text = self.arr[self.index%5]
+        self.suggestionLabel.text = self.arr[self.index%arr.count]
         self.index+=1
         UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseIn], animations: {
             self.suggestionLabel.alpha = 1.0
