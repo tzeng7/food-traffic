@@ -8,16 +8,19 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UITextFieldDelegate {
 
     var arr = ["Tacos?", "Boba?", "Fast Food?", "Italian?", "Indian?", "Mediterranean?", "Thai?", "Japanese?", "Mexican?", "Chinese?"]
     var index = 0
 
+    @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var suggestionLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.searchField.delegate = self
+
         repeatFadeIn()
         
 
@@ -44,5 +47,21 @@ class SearchViewController: UIViewController {
         
         
     }
+    
+    func textFieldShouldReturn(_ searchField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        searchField.becomeFirstResponder()
+        searchField.resignFirstResponder()
+        return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "toBusinessesList" {
+                if textFieldShouldReturn(self.searchField) {
+                    print ("segue")
+                }
+            }
+       }
+    }
 }
-

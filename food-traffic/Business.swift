@@ -16,7 +16,7 @@ struct Business {
     var image_url: String
     var location: String
     var distance: Double
-
+    var type: String
     
     init (json: JSON) {
         self.id = json["name"].stringValue
@@ -24,6 +24,14 @@ struct Business {
         self.image_url = json["image_url"].stringValue
         self.location = "\(json["location"]["display_address"][0]), \(json["location"]["display_address"][1])"
         self.distance = json["distance"].doubleValue
+        var value: [String] = []
+        for (_, subJson) in json["categories"] {
+            if let title = subJson["title"].string {
+                value.append(title)
+            }
+        }
+        let joiner = ", "
+        self.type = value.joined(separator: joiner)
     }
     
     

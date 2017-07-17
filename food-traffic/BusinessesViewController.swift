@@ -1,4 +1,4 @@
-//
+    //
 //  BusinessesViewController.swift
 //  food-traffic
 //
@@ -10,10 +10,17 @@ import UIKit
 
 class BusinessesViewController: UITableViewController {
 
+    var businesses: [Business]?
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        let sharedInstance = YelpAPIService.sharedInstance
+        sharedInstance.getBusinesses(term: "Thai", longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
+            self.tableView.reloadData()
 
-        // Uncomment the following line to preserve selection between presentations
+        }
+        print("Calling viewDiDLoad")
+        super.viewDidLoad()
+            // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -27,25 +34,32 @@ class BusinessesViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if let businessCheck = businesses {
+            return businessCheck.count
+        } else {
+            return 0
+        }
+        
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "businessCell", for: indexPath) as! BusinessCell
+        let row = indexPath.row
+        if let businessCheck = businesses {
+            let business = businessCheck[row]
+            cell.distanceLabel.text = String(round(100*business.distance)/100)
+            cell.addressLabel.text = business.location
+            cell.businessLabel.text = business.id
+            cell.typeLabel.text = business.type
+        }
+        
         return cell
+    
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

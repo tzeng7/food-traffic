@@ -53,7 +53,8 @@ class YelpAPIService {
                         let business = Business(json: business)
                         businesses.append(business)
                     }
-                    print(businesses)
+                    print (businesses)
+                    completion(businesses)
                     
                     
                 }
