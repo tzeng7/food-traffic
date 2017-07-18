@@ -9,17 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FirebaseUI-FirebaseAuthUI.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>FontAwesome.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,12 +52,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3C4E77357C6255787F74A3AE0BE1C87D</key>
+		<key>53614DE7F979D09EE660292E277B77E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6991F49AED797519343B1F4591001691</key>
+		<key>7ADCB73BCA5C1FD9CC1624C2F561E500</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8958C19B28D2A526DBB83051100FE1C0</key>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CD11672B6619C297B6AEE3DFB8213C59</key>
 		<dict>
 			<key>primary</key>
 			<true/>

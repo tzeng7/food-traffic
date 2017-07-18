@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,34 +28,34 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JSR-GX-0IF">
-                                            <rect key="frame" x="119.5" y="9.5" width="88" height="91"/>
+                                            <rect key="frame" x="119.5" y="18" width="83.5" height="74.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hQP-EB-LzF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="88" height="51.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="83.5" height="40"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-3n-933">
-                                                            <rect key="frame" x="0.0" y="0.0" width="88" height="19.5"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business ID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-3n-933">
+                                                            <rect key="frame" x="0.0" y="0.0" width="83.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoq-Am-3Lr">
-                                                            <rect key="frame" x="0.0" y="19.5" width="49.5" height="16"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <rect key="frame" x="0.0" y="18" width="36" height="11"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZO-y3-5gh">
-                                                            <rect key="frame" x="0.0" y="35.5" width="79.5" height="16"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <rect key="frame" x="0.0" y="29" width="58" height="11"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-ins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOI-Iu-fqv">
-                                                    <rect key="frame" x="0.0" y="71.5" width="88" height="19.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <rect key="frame" x="0.0" y="60" width="83.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -66,9 +67,9 @@
                                                 <constraint firstAttribute="width" secondItem="xOo-JB-0Uh" secondAttribute="height" multiplier="1:1" id="6O1-0o-GHt"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYC-Ko-lLT">
-                                            <rect key="frame" x="288" y="9.5" width="66" height="19.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYC-Ko-lLT">
+                                            <rect key="frame" x="311.5" y="78.5" width="42.5" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -76,8 +77,9 @@
                                     <constraints>
                                         <constraint firstItem="xOo-JB-0Uh" firstAttribute="centerY" secondItem="pJM-ta-Eu2" secondAttribute="centerY" id="8Ss-U9-ux9"/>
                                         <constraint firstItem="xOo-JB-0Uh" firstAttribute="height" secondItem="pJM-ta-Eu2" secondAttribute="height" id="AWX-Ps-Oic"/>
-                                        <constraint firstItem="gYC-Ko-lLT" firstAttribute="top" secondItem="ywY-3n-933" secondAttribute="top" id="dbr-Uj-eRA"/>
+                                        <constraint firstItem="gYC-Ko-lLT" firstAttribute="centerY" secondItem="LOI-Iu-fqv" secondAttribute="centerY" id="ghV-DX-UJO"/>
                                         <constraint firstItem="JSR-GX-0IF" firstAttribute="centerY" secondItem="pJM-ta-Eu2" secondAttribute="centerY" id="mB9-el-JEP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gYC-Ko-lLT" secondAttribute="trailing" constant="13" id="p7t-Rn-k5j"/>
                                         <constraint firstItem="JSR-GX-0IF" firstAttribute="leading" secondItem="xOo-JB-0Uh" secondAttribute="trailing" constant="10" id="wXd-uS-Ag4"/>
                                         <constraint firstItem="xOo-JB-0Uh" firstAttribute="leading" secondItem="pJM-ta-Eu2" secondAttribute="leading" id="yYZ-ua-Vcy"/>
                                     </constraints>

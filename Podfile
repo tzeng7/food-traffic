@@ -13,4 +13,6 @@ pod 'Firebase/Core'
   pod 'Firebase/Storage'
 pod 'Alamofire', '~> 4.4’
 pod 'SwiftyJSON’
+    pod 'AlamofireImage', '~> 3.1'
+
 end

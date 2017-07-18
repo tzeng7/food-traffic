@@ -20,7 +20,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.searchField.delegate = self
-
+        
         repeatFadeIn()
         
 
@@ -50,17 +50,15 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ searchField: UITextField) -> Bool {
         self.view.endEditing(true)
-        searchField.becomeFirstResponder()
-        searchField.resignFirstResponder()
+        performSegue(withIdentifier: "toBusinessesList", sender: searchField)
+        resignFirstResponder()
         return true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == "toBusinessesList" {
-                if textFieldShouldReturn(self.searchField) {
-                    print ("segue")
-                }
+                let BusinessesViewController = segue.destination as! BusinessesViewController
             }
        }
     }

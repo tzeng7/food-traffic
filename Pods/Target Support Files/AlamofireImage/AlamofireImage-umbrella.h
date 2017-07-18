@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double FontAwesome_swiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char FontAwesome_swiftVersionString[];
+FOUNDATION_EXPORT double AlamofireImageVersionNumber;
+FOUNDATION_EXPORT const unsigned char AlamofireImageVersionString[];
 

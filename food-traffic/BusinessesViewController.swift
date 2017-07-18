@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Alamofire
+import AlamofireImage
 class BusinessesViewController: UITableViewController {
 
     var businesses: [Business]?
@@ -15,6 +16,7 @@ class BusinessesViewController: UITableViewController {
     override func viewDidLoad() {
         let sharedInstance = YelpAPIService.sharedInstance
         sharedInstance.getBusinesses(term: "Thai", longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
+            
             self.tableView.reloadData()
 
         }
@@ -50,8 +52,15 @@ class BusinessesViewController: UITableViewController {
         let row = indexPath.row
         if let businessCheck = businesses {
             let business = businessCheck[row]
-            cell.distanceLabel.text = String(round(100*business.distance)/100)
+            cell.distanceLabel.text =
+                "\(String(round(100*business.distance)/100)) me"
             cell.addressLabel.text = business.location
+            cell.addressLabel.adjustsFontSizeToFitWidth = true
+            
+            let thumbnail = cell.thumbImage
+            let url = business.image_url
+            thumbnail!.af_setImage(withURL: URL(string: url)!)
+            
             cell.businessLabel.text = business.id
             cell.typeLabel.text = business.type
         }
@@ -59,7 +68,7 @@ class BusinessesViewController: UITableViewController {
         return cell
     
     }
-    
+   
 
     /*
     // Override to support conditional editing of the table view.
