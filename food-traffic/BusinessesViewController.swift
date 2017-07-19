@@ -15,7 +15,9 @@ class BusinessesViewController: UITableViewController {
     
     override func viewDidLoad() {
         let sharedInstance = YelpAPIService.sharedInstance
-        sharedInstance.getBusinesses(term: "Thai", longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
+        let searchController = SearchViewController()
+        sharedInstance.getBusinesses(term: searchController.entry, longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
+        //sharedInstance.getBusinesses(term: "Thai", longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
             
             self.tableView.reloadData()
 
@@ -53,7 +55,7 @@ class BusinessesViewController: UITableViewController {
         if let businessCheck = businesses {
             let business = businessCheck[row]
             cell.distanceLabel.text =
-                "\(String(round(100*business.distance)/100)) me"
+                "\(String(round(100*business.distance)/100)) mi"
             cell.addressLabel.text = business.location
             cell.addressLabel.adjustsFontSizeToFitWidth = true
             

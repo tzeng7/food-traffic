@@ -61,7 +61,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xOo-JB-0Uh">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xOo-JB-0Uh">
                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="109.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="xOo-JB-0Uh" secondAttribute="height" multiplier="1:1" id="6O1-0o-GHt"/>
@@ -132,6 +132,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="saveTextToVar:" destination="mG2-mV-WvR" eventType="touchUpInside" id="Z4T-h0-cAf"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lad-uH-Fwv">
                                         <rect key="frame" x="0.0" y="128" width="375" height="22"/>

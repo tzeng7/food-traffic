@@ -23,7 +23,7 @@ struct Business {
         self.is_closed = json["is_closed"].boolValue
         self.image_url = json["image_url"].stringValue
         self.location = "\(json["location"]["display_address"][0]), \(json["location"]["display_address"][1])"
-        self.distance = json["distance"].doubleValue
+        self.distance = json["distance"].doubleValue * 0.000621371
         var value: [String] = []
         for (_, subJson) in json["categories"] {
             if let title = subJson["title"].string {

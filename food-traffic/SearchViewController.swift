@@ -12,6 +12,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
 
     var arr = ["Tacos?", "Boba?", "Fast Food?", "Italian?", "Indian?", "Mediterranean?", "Thai?", "Japanese?", "Mexican?", "Chinese?"]
     var index = 0
+    var entry: String = ""
 
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var suggestionLabel: UILabel!
@@ -20,7 +21,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.searchField.delegate = self
-        
+
         repeatFadeIn()
         
 
@@ -50,6 +51,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ searchField: UITextField) -> Bool {
         self.view.endEditing(true)
+        self.entry = self.searchField.text!
         performSegue(withIdentifier: "toBusinessesList", sender: searchField)
         resignFirstResponder()
         return true
@@ -62,4 +64,4 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
             }
        }
     }
-}
+ }
