@@ -12,17 +12,20 @@ import AlamofireImage
 class BusinessesViewController: UITableViewController {
 
     var businesses: [Business]?
-    
+    var entry: String?
+    var latitude: Double = 0.0
+    var longitude: Double = 0.0
     override func viewDidLoad() {
         let sharedInstance = YelpAPIService.sharedInstance
-        let searchController = SearchViewController()
-        sharedInstance.getBusinesses(term: searchController.entry, longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
+        if let entry = entry {
+            sharedInstance.getBusinesses(term: entry, longitude: String(longitude), latitude: String(latitude)){ (businesses) in self.businesses = businesses
+                self.tableView.reloadData()
+            }
+        }
         //sharedInstance.getBusinesses(term: "Thai", longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
             
-            self.tableView.reloadData()
-
-        }
-        print("Calling viewDiDLoad")
+            
+        print("Calling viewDidLoad")
         super.viewDidLoad()
             // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -65,10 +68,21 @@ class BusinessesViewController: UITableViewController {
             
             cell.businessLabel.text = business.id
             cell.typeLabel.text = business.type
+            cell.checkInLabel.text = "Busy"
         }
         
         return cell
     
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "displayRestaurant" {
+                let indexPath = tableView.indexPathForSelectedRow
+                let businessViewController = segue.destination as! BusinessViewController
+                businessViewController.business = businesses![indexPath!.row]
+            }
+        }
     }
    
 
