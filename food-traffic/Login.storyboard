@@ -30,13 +30,12 @@
                                         <color key="textColor" red="0.90196078431372551" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewa-5k-MIY">
-                                        <rect key="frame" x="0.0" y="34.5" width="375" height="100"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giphy.png" translatesAutoresizingMaskIntoConstraints="NO" id="37L-fS-xYb">
+                                        <rect key="frame" x="175" y="34.5" width="25" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="VCS-6b-qqz"/>
+                                            <constraint firstAttribute="height" constant="100" id="OHb-Gi-Yku"/>
                                         </constraints>
-                                    </view>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i54-8M-bjk">
                                         <rect key="frame" x="40" y="134.5" width="295" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.66666666666666663" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,7 +54,8 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="i54-8M-bjk" secondAttribute="trailing" constant="40" id="5Ig-DH-2eh"/>
                                     <constraint firstItem="i54-8M-bjk" firstAttribute="leading" secondItem="sOG-2z-CwR" secondAttribute="leading" constant="40" id="BST-JP-Svy"/>
-                                    <constraint firstItem="ewa-5k-MIY" firstAttribute="width" secondItem="sOG-2z-CwR" secondAttribute="width" id="ayY-gs-vy7"/>
+                                    <constraint firstAttribute="trailing" secondItem="37L-fS-xYb" secondAttribute="trailing" constant="175" id="YCj-ai-p3k"/>
+                                    <constraint firstItem="37L-fS-xYb" firstAttribute="leading" secondItem="sOG-2z-CwR" secondAttribute="leading" constant="175" id="YUc-x4-Bkh"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -68,6 +68,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="i54-8M-bjk" id="PZU-19-AYb"/>
+                        <outlet property="peopleLine" destination="37L-fS-xYb" id="Qnr-TJ-aj0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TM-eh-EwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,4 +76,7 @@
             <point key="canvasLocation" x="116" y="149.77511244377811"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="giphy.png" width="253" height="207"/>
+    </resources>
 </document>

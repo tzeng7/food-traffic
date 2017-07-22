@@ -36,4 +36,6 @@ class BusinessViewController: UIViewController {
         noTapped += 1
     }
     
+    
+    
 }

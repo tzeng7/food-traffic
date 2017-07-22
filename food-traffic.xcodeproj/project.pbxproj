@@ -19,6 +19,10 @@
 		0A131D191F1738DA006FC6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D171F1738DA006FC6E3 /* Main.storyboard */; };
 		0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */; };
 		0A131D1E1F1738DA006FC6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1C1F1738DA006FC6E3 /* LaunchScreen.storyboard */; };
+		0A1FC0801F226D0400D5F2E3 /* BusinessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC07F1F226D0400D5F2E3 /* BusinessService.swift */; };
+		0A1FC0821F22ACD300D5F2E3 /* giphy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC0811F22ACD300D5F2E3 /* giphy.png */; };
+		0A1FC0841F22B1C200D5F2E3 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */; };
+		0A1FC0861F22B22000D5F2E3 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC0851F22B22000D5F2E3 /* giphy.gif */; };
 		0A7899CF1F18B53400EF1784 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */; };
 		0A9D18311F173978009F5B61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D18301F173978009F5B61 /* Login.storyboard */; };
 		0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18341F1739E9009F5B61 /* LoginViewController.swift */; };
@@ -41,6 +45,10 @@
 		0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A131D1D1F1738DA006FC6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A131D1F1F1738DA006FC6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1FC07F1F226D0400D5F2E3 /* BusinessService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessService.swift; sourceTree = "<group>"; };
+		0A1FC0811F22ACD300D5F2E3 /* giphy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giphy.png; path = ../../../../Documents/giphy.png; sourceTree = "<group>"; };
+		0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		0A1FC0851F22B22000D5F2E3 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
 		0A9D18301F173978009F5B61 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0A9D18341F1739E9009F5B61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1095981F18880300AC17F5 /* Business.swift */,
+				0A1FC07F1F226D0400D5F2E3 /* BusinessService.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -108,7 +117,9 @@
 		0A131D121F1738DA006FC6E3 /* food-traffic */ = {
 			isa = PBXGroup;
 			children = (
+				0A1FC0851F22B22000D5F2E3 /* giphy.gif */,
 				0A131D131F1738DA006FC6E3 /* AppDelegate.swift */,
+				0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */,
 				0A10959E1F18887500AC17F5 /* Service */,
 				0A10959A1F18880800AC17F5 /* Models */,
 				0A1095931F17E7B800AC17F5 /* Views */,
@@ -139,6 +150,7 @@
 				0A9D18421F174C24009F5B61 /* SearchViewController.swift */,
 				0A1095961F18858A00AC17F5 /* BusinessesViewController.swift */,
 				0A1292AF1F1FBCD5007887DF /* BusinessViewController.swift */,
+				0A1FC0811F22ACD300D5F2E3 /* giphy.png */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -245,6 +257,8 @@
 				0A9D18311F173978009F5B61 /* Login.storyboard in Resources */,
 				0A131D1E1F1738DA006FC6E3 /* LaunchScreen.storyboard in Resources */,
 				0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */,
+				0A1FC0821F22ACD300D5F2E3 /* giphy.png in Resources */,
+				0A1FC0861F22B22000D5F2E3 /* giphy.gif in Resources */,
 				0A131D191F1738DA006FC6E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +322,8 @@
 				0A1095991F18880300AC17F5 /* Business.swift in Sources */,
 				0A9D18431F174C24009F5B61 /* SearchViewController.swift in Sources */,
 				0A1095971F18858A00AC17F5 /* BusinessesViewController.swift in Sources */,
+				0A1FC0841F22B1C200D5F2E3 /* Swift+Gif.swift in Sources */,
+				0A1FC0801F226D0400D5F2E3 /* BusinessService.swift in Sources */,
 				0A1095A01F18888200AC17F5 /* YelpAPIService.swift in Sources */,
 				0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */,
 				0A7899CF1F18B53400EF1784 /* AccessTokenAdapter.swift in Sources */,

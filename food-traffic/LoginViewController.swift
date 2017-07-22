@@ -12,8 +12,11 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    
+    @IBOutlet weak var peopleLine: UIImageView!
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
+        peopleLine.loadGif(name: "giphy")
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -42,7 +45,6 @@ extension LoginViewController: FUIAuthDelegate {
             assertionFailure("Error signing in: \(error.localizedDescription)")
             return
         }
-        
         print("handle user signup / login")
     }
 }
