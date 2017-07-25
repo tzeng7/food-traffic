@@ -13,6 +13,7 @@ import AlamofireImage
 
 class BusinessViewController: UIViewController {
     
+    
     var business: Business?
     var yesTapped = 0
     var noTapped = 0
@@ -30,11 +31,17 @@ class BusinessViewController: UIViewController {
     }
     
     @IBAction func yesButtonTapped(_ sender: UIButton) {
-        yesTapped += 1
+        BusinessService.updateRating(business!, rating: 1, completion: { business in
+            return
+        })
+        BusinessService.getRatings(business!)
     }
     @IBAction func noButtonTapped(_ sender: UIButton) {
-        noTapped += 1
+        BusinessService.updateRating(business!, rating: 0, completion: {business in
+            return
+        })
     }
+    
     
     
     

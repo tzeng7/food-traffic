@@ -27,6 +27,7 @@
 		0A9D18311F173978009F5B61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D18301F173978009F5B61 /* Login.storyboard */; };
 		0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18341F1739E9009F5B61 /* LoginViewController.swift */; };
 		0A9D18431F174C24009F5B61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18421F174C24009F5B61 /* SearchViewController.swift */; };
+		0AD5A86E1F27B0DD0040025C /* STAYINQUEUE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5A86D1F27B0DD0040025C /* STAYINQUEUE.mp4 */; };
 		5E7EB0E6E8ED097F67D1F01F /* Pods_food_traffic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		0A9D18301F173978009F5B61 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0A9D18341F1739E9009F5B61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A9D18421F174C24009F5B61 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0AD5A86D1F27B0DD0040025C /* STAYINQUEUE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = STAYINQUEUE.mp4; sourceTree = "<group>"; };
 		3625DB6C9706E41BF807F57F /* Pods-food-traffic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.debug.xcconfig"; sourceTree = "<group>"; };
 		43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_traffic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57E29A0C65D3C35C1E51C30 /* Pods-food-traffic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.release.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				0A1FC0851F22B22000D5F2E3 /* giphy.gif */,
 				0A131D131F1738DA006FC6E3 /* AppDelegate.swift */,
 				0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */,
+				0AD5A86D1F27B0DD0040025C /* STAYINQUEUE.mp4 */,
 				0A10959E1F18887500AC17F5 /* Service */,
 				0A10959A1F18880800AC17F5 /* Models */,
 				0A1095931F17E7B800AC17F5 /* Views */,
@@ -259,6 +262,7 @@
 				0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */,
 				0A1FC0821F22ACD300D5F2E3 /* giphy.png in Resources */,
 				0A1FC0861F22B22000D5F2E3 /* giphy.gif in Resources */,
+				0AD5A86E1F27B0DD0040025C /* STAYINQUEUE.mp4 in Resources */,
 				0A131D191F1738DA006FC6E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
