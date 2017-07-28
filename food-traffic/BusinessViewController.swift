@@ -34,7 +34,7 @@ class BusinessViewController: UIViewController {
         BusinessService.updateRating(business!, rating: 1, completion: { business in
             return
         })
-        BusinessService.getRatings(business!)
+//        BusinessService.getRatings(business!)
     }
     @IBAction func noButtonTapped(_ sender: UIButton) {
         BusinessService.updateRating(business!, rating: 0, completion: {business in

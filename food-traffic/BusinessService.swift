@@ -23,22 +23,32 @@ class BusinessService {
         autoRef.setValue(attributes) { (error, ref) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
-                return completion(nil)
+                return
             }
             
         }
     }
     
-    static func getRatings (_ business: Business) {
+    static func getRatings (completion: @escaping (CLong) -> Void) {
         let ref = Database.database().reference().childByAutoId() //sets reference to firUser uid
         
-        let key = ref.key
         let dict = ["time": ServerValue.timestamp()]
         ref.setValue(dict)
         ref.child("time").observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? CLong
-            print (value)
+            guard let currentTime = snapshot.value as? CLong else {
+                return
             }
-        )
+            completion(currentTime)
+            ref.removeValue()
+            })
+        
+        
+       
+    }
+    
+    static func queryLastHour (_ businessId: String, startTime: CLong, endTime: CLong, completion: @escaping (DataSnapshot) -> Void) {
+        let ref = Database.database().reference().child("businesses").child(businessId) //sets reference to firUser uid
+        
+        ref.queryOrdered(byChild: "time").queryStarting(atValue: startTime).queryEnding(atValue: endTime).observe(.value, with: completion)
     }
 }

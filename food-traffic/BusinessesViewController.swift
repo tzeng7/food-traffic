@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 import Alamofire
 import AlamofireImage
 class BusinessesViewController: UITableViewController {
@@ -18,10 +19,14 @@ class BusinessesViewController: UITableViewController {
     override func viewDidLoad() {
         let sharedInstance = YelpAPIService.sharedInstance
         if let entry = entry {
-            sharedInstance.getBusinesses(term: entry, longitude: String(longitude), latitude: String(latitude)){ (businesses) in self.businesses = businesses
-                self.tableView.reloadData()
+            sharedInstance.getBusinesses(term: entry, longitude: String(longitude), latitude: String(latitude), sort_by: "distance"){ (businesses) in
+                
+                self.businesses = businesses
+                self.recalculateBusy()
             }
         }
+        
+        
         //sharedInstance.getBusinesses(term: "Thai", longitude: "-121.97158380000002", latitude: "37.3179792"){ (businesses) in self.businesses = businesses
             
             
@@ -32,6 +37,11 @@ class BusinessesViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        self.recalculateBusy()
+        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,7 +78,7 @@ class BusinessesViewController: UITableViewController {
             
             cell.businessLabel.text = business.id
             cell.typeLabel.text = business.type
-            cell.checkInLabel.text = "Busy"
+            cell.checkInLabel.text = business.busy.rawValue
         }
         
         return cell
@@ -82,6 +92,47 @@ class BusinessesViewController: UITableViewController {
                 let businessViewController = segue.destination as! BusinessViewController
                 businessViewController.business = businesses![indexPath!.row]
             }
+        }
+    }
+    
+    func recalculateBusy() -> Void {
+        BusinessService.getRatings() { (currentTime) in
+            
+            let hourAgoTime = currentTime - 86400000
+            guard self.businesses != nil else {
+                return
+            }
+            for (index, business) in self.businesses!.enumerated() {
+                BusinessService.queryLastHour(business.realID, startTime: hourAgoTime, endTime: currentTime) {
+                    (snapshot) in
+                    print("Index: \(index) BusinessId: \(snapshot.ref.description())")
+                    var noBusy = 0
+                    var yesBusy = 0
+                    for ratingEntry in snapshot.children {
+                        if let ratingEntry = ratingEntry as? DataSnapshot {
+                            guard let dict = ratingEntry.value as? [String: Any],
+                                let ratingValue = dict["rating"] as? Int else {
+                                    return
+                            }
+                            if ratingValue == 1 {
+                                yesBusy += 1
+                            } else {
+                                noBusy += 1
+                            }
+                        }
+                    }
+                    if yesBusy == 0 && noBusy == 0 {
+                        self.businesses?[index].busy = .noData
+                    } else if yesBusy >= noBusy {
+                        self.businesses?[index].busy = .busy
+                    } else {
+                        self.businesses?[index].busy = .notBusy
+                    }
+                    self.tableView.reloadData()
+                    
+                }
+            }
+            
         }
     }
    

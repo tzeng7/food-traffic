@@ -19,31 +19,34 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var peopleLine: UIImageView!
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
-        /*
-        let theURL = Bundle.main.url(forResource: "STAYINQUEUE", withExtension: "mp4")
+        
+       
+        super.viewDidLoad()
+    
+        
+        let theURL = Bundle.main.url(forResource: "realvideo", withExtension: "mp4")
         
         Player = AVPlayer(url: theURL!)
         
         PlayerLayer = AVPlayerLayer(player: Player)
-        PlayerLayer.videoGravity = AVLayerVideoGravityResize
+        PlayerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         Player.volume = 0
         Player.actionAtItemEnd = AVPlayerActionAtItemEnd.none
         
-        PlayerLayer.frame = view.layer.bounds
+        PlayerLayer.frame = view.layer.frame
         view.backgroundColor = UIColor.clear
+        
         view.layer.insertSublayer(PlayerLayer, at: 0)
         
         NotificationCenter.default.addObserver(self,
-                                                         selector: "playerItemDidReachEnd:",
-                                                         name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-                                                         object: Player.currentItem)
-        */
-        peopleLine.loadGif(name: "giphy")
-        super.viewDidLoad()
-
+                                               selector: #selector(playerItemDidReachEnd(notification:)),
+                                               name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+                                               object: Player.currentItem)
         // Do any additional setup after loading the view.
+        
+       
     }
-        /*
+    
     func playerItemDidReachEnd(notification: NSNotification) {
         let p: AVPlayerItem = notification.object as! AVPlayerItem
         p.seek(to: kCMTimeZero)
@@ -60,7 +63,7 @@ class LoginViewController: UIViewController {
         Player.pause()
         paused = true
     }
-*/
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -74,6 +77,7 @@ class LoginViewController: UIViewController {
         authUI.delegate = self
         
         // 3
+        
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
     }

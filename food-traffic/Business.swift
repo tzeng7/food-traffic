@@ -18,7 +18,12 @@ struct Business {
     var location: String
     var distance: Double
     var type: String
-    
+    var busy: Status
+    enum Status: String {
+        case busy = "Busy"
+        case notBusy = "Not Busy"
+        case noData = "No Data"
+    }
     init (json: JSON) {
         self.id = json["name"].stringValue
         self.realID = json["id"].stringValue
@@ -35,6 +40,7 @@ struct Business {
         let joiner = ", "
         self.type = value.joined(separator: joiner)
         //
+        self.busy = .noData
     }
      //
 

@@ -20,15 +20,14 @@
 		0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1A1F1738DA006FC6E3 /* Assets.xcassets */; };
 		0A131D1E1F1738DA006FC6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A131D1C1F1738DA006FC6E3 /* LaunchScreen.storyboard */; };
 		0A1FC0801F226D0400D5F2E3 /* BusinessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC07F1F226D0400D5F2E3 /* BusinessService.swift */; };
-		0A1FC0821F22ACD300D5F2E3 /* giphy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC0811F22ACD300D5F2E3 /* giphy.png */; };
 		0A1FC0841F22B1C200D5F2E3 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */; };
 		0A1FC0861F22B22000D5F2E3 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC0851F22B22000D5F2E3 /* giphy.gif */; };
 		0A7899CF1F18B53400EF1784 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */; };
 		0A9D18311F173978009F5B61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D18301F173978009F5B61 /* Login.storyboard */; };
 		0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18341F1739E9009F5B61 /* LoginViewController.swift */; };
 		0A9D18431F174C24009F5B61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18421F174C24009F5B61 /* SearchViewController.swift */; };
-		0AD5A86E1F27B0DD0040025C /* STAYINQUEUE.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5A86D1F27B0DD0040025C /* STAYINQUEUE.mp4 */; };
 		5E7EB0E6E8ED097F67D1F01F /* Pods_food_traffic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */; };
+		CEB8DF521F29972600A0413F /* realvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CEB8DF511F29972600A0413F /* realvideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,17 +46,16 @@
 		0A131D1D1F1738DA006FC6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A131D1F1F1738DA006FC6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A1FC07F1F226D0400D5F2E3 /* BusinessService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessService.swift; sourceTree = "<group>"; };
-		0A1FC0811F22ACD300D5F2E3 /* giphy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giphy.png; path = ../../../../Documents/giphy.png; sourceTree = "<group>"; };
 		0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		0A1FC0851F22B22000D5F2E3 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
 		0A9D18301F173978009F5B61 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0A9D18341F1739E9009F5B61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A9D18421F174C24009F5B61 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		0AD5A86D1F27B0DD0040025C /* STAYINQUEUE.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = STAYINQUEUE.mp4; sourceTree = "<group>"; };
 		3625DB6C9706E41BF807F57F /* Pods-food-traffic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.debug.xcconfig"; sourceTree = "<group>"; };
 		43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_traffic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57E29A0C65D3C35C1E51C30 /* Pods-food-traffic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.release.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.release.xcconfig"; sourceTree = "<group>"; };
+		CEB8DF511F29972600A0413F /* realvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = realvideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +117,11 @@
 		0A131D121F1738DA006FC6E3 /* food-traffic */ = {
 			isa = PBXGroup;
 			children = (
+				CEB8DF511F29972600A0413F /* realvideo.mp4 */,
 				0A1FC0851F22B22000D5F2E3 /* giphy.gif */,
 				0A131D131F1738DA006FC6E3 /* AppDelegate.swift */,
-				0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */,
-				0AD5A86D1F27B0DD0040025C /* STAYINQUEUE.mp4 */,
+				CEFA4A9D1F2A51A900CDA55E /* Supporting */,
+				CEFA4A9C1F2A519F00CDA55E /* Extensions */,
 				0A10959E1F18887500AC17F5 /* Service */,
 				0A10959A1F18880800AC17F5 /* Models */,
 				0A1095931F17E7B800AC17F5 /* Views */,
@@ -153,7 +152,6 @@
 				0A9D18421F174C24009F5B61 /* SearchViewController.swift */,
 				0A1095961F18858A00AC17F5 /* BusinessesViewController.swift */,
 				0A1292AF1F1FBCD5007887DF /* BusinessViewController.swift */,
-				0A1FC0811F22ACD300D5F2E3 /* giphy.png */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -190,6 +188,21 @@
 				43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFA4A9C1F2A519F00CDA55E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CEFA4A9D1F2A51A900CDA55E /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +273,9 @@
 				0A9D18311F173978009F5B61 /* Login.storyboard in Resources */,
 				0A131D1E1F1738DA006FC6E3 /* LaunchScreen.storyboard in Resources */,
 				0A131D1B1F1738DA006FC6E3 /* Assets.xcassets in Resources */,
-				0A1FC0821F22ACD300D5F2E3 /* giphy.png in Resources */,
 				0A1FC0861F22B22000D5F2E3 /* giphy.gif in Resources */,
-				0AD5A86E1F27B0DD0040025C /* STAYINQUEUE.mp4 in Resources */,
 				0A131D191F1738DA006FC6E3 /* Main.storyboard in Resources */,
+				CEB8DF521F29972600A0413F /* realvideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,8 +30,8 @@ class YelpAPIService {
     
     //Ideally this would be called by the ViewController and would
     
-    func getBusinesses(term: String, longitude: String, latitude: String, completion: @escaping (([Business]?) -> Void)) {
-        let parameters:[String: String] = ["term":term, "longitude":longitude, "latitude":latitude]
+    func getBusinesses(term: String, longitude: String, latitude: String, sort_by: String, completion: @escaping (([Business]?) -> Void)) {
+        let parameters:[String: String] = ["term":term, "longitude":longitude, "latitude":latitude, "sort_by":sort_by ]
         
         sessionManager.request(endpoint, method: .get, parameters: parameters).validate().responseJSON() { response in
             switch response.result {
@@ -61,7 +61,6 @@ class YelpAPIService {
             case .failure(let error):
                 print(error)
             }
-            
         }
     }
     
