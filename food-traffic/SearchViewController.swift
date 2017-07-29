@@ -17,13 +17,14 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate, UITextF
     let locationMgr = CLLocationManager()
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var suggestionLabel: UILabel!
+    @IBOutlet weak var peopleGif: UIImageView!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getLocation()
         self.searchField.delegate = self
-
+        peopleGif.loadGif(name: "giphy")
         repeatFadeIn()
         
 

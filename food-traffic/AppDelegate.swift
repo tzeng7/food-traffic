@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import FirebaseAuthUI
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,11 +21,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
+        UserDefaults.standard.value(forKey: "loggedin")
+        if let userKey = UserDefaults.standard.value(forKey: "loggedin") as? Bool {
+            if userKey {
+                let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
+                if let initialViewController = storyboard.instantiateInitialViewController() {
+                    self.window?.rootViewController = initialViewController
+                    self.window?.makeKeyAndVisible()
+                } else {
+                    let storyboard = UIStoryboard(name: "Login", bundle: .main)
+                    if let initialViewController = storyboard.instantiateInitialViewController() {
+                        window?.rootViewController = initialViewController
+                        window?.makeKeyAndVisible()
+                    }
+                }
+            }
 
-        let storyboard = UIStoryboard(name: "Login", bundle: .main)
-              if let initialViewController = storyboard.instantiateInitialViewController() {
-            window?.rootViewController = initialViewController
-            window?.makeKeyAndVisible()
+//        if Auth.auth().currentUser != nil {
+//            print ("user")
+//            let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
+//            if let initialViewController = storyboard.instantiateInitialViewController() {
+//                self.window?.rootViewController = initialViewController
+//                self.window?.makeKeyAndVisible()
+//            } else {
+//                let storyboard = UIStoryboard(name: "Login", bundle: .main)
+//                if let initialViewController = storyboard.instantiateInitialViewController() {
+//                    window?.rootViewController = initialViewController
+//                    window?.makeKeyAndVisible()
+//            }
+//        }
+//        let storyboard = UIStoryboard(name: "Login", bundle: .main)
+//              if let initialViewController = storyboard.instantiateInitialViewController() {
+//            window?.rootViewController = initialViewController
+//            window?.makeKeyAndVisible()
+        } else {
+            let storyboard = UIStoryboard(name: "Login", bundle: .main)
+            if let initialViewController = storyboard.instantiateInitialViewController() {
+                window?.rootViewController = initialViewController
+                window?.makeKeyAndVisible()
+            }
         }
         
         return true

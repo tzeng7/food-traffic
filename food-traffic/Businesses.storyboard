@@ -163,16 +163,27 @@
                                     <constraint firstAttribute="trailing" secondItem="jyW-Us-MYa" secondAttribute="trailing" constant="50" id="fPu-b4-M5x"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0k-rK-bK6">
+                                <rect key="frame" x="67" y="365" width="240" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="M5b-vW-ZcM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="U0k-rK-bK6" firstAttribute="leading" secondItem="xRm-6L-aX2" secondAttribute="leadingMargin" constant="51" id="0yI-1i-A6f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U0k-rK-bK6" secondAttribute="trailing" constant="52" id="9QB-lQ-j16"/>
+                            <constraint firstItem="i5i-h6-CiA" firstAttribute="top" secondItem="U0k-rK-bK6" secondAttribute="bottom" constant="202" id="ASE-eC-f7n"/>
                             <constraint firstItem="UoW-qO-gIp" firstAttribute="centerX" secondItem="xRm-6L-aX2" secondAttribute="centerX" id="AfJ-ek-GV1"/>
+                            <constraint firstItem="U0k-rK-bK6" firstAttribute="top" secondItem="Lad-uH-Fwv" secondAttribute="bottom" constant="7.5" id="bc4-yM-yme"/>
                             <constraint firstItem="UoW-qO-gIp" firstAttribute="centerY" secondItem="xRm-6L-aX2" secondAttribute="centerY" constant="-50" id="mjS-v7-aZk"/>
                             <constraint firstItem="UoW-qO-gIp" firstAttribute="width" secondItem="xRm-6L-aX2" secondAttribute="width" id="mwK-QS-h57"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="vQW-ge-xev"/>
                     <connections>
+                        <outlet property="peopleGif" destination="U0k-rK-bK6" id="9f8-O2-7aV"/>
                         <outlet property="searchField" destination="jyW-Us-MYa" id="wjw-lJ-vgo"/>
                         <outlet property="suggestionLabel" destination="Lad-uH-Fwv" id="WOs-vN-Tem"/>
                         <segue destination="tkf-YW-Qyg" kind="show" identifier="toBusinessesList" id="Sbs-ZQ-QYR"/>
@@ -212,7 +223,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it busy?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbx-wY-PO2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Busy?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbx-wY-PO2">
                                 <rect key="frame" x="50" y="395" width="275" height="28"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.66666666669999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

@@ -79,6 +79,11 @@ class BusinessesViewController: UITableViewController {
             cell.businessLabel.text = business.id
             cell.typeLabel.text = business.type
             cell.checkInLabel.text = business.busy.rawValue
+            if cell.checkInLabel.text == "Busy" {
+                cell.checkInLabel.textColor = UIColor.red
+            } else if cell.checkInLabel.text == "Not Busy" {
+                cell.checkInLabel.textColor = UIColor.green
+            }
         }
         
         return cell
@@ -98,7 +103,7 @@ class BusinessesViewController: UITableViewController {
     func recalculateBusy() -> Void {
         BusinessService.getRatings() { (currentTime) in
             
-            let hourAgoTime = currentTime - 86400000
+            let hourAgoTime = currentTime - 3600000
             guard self.businesses != nil else {
                 return
             }

@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         
-       
+        loginButton.layer.cornerRadius = 5
         super.viewDidLoad()
     
         
@@ -77,26 +77,31 @@ class LoginViewController: UIViewController {
         authUI.delegate = self
         
         // 3
-        
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
-    }
+        }
+
+//        let authViewController = authUI.authViewController()
+//        present(authViewController, animated: true)
 }
 extension LoginViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
         if let error = error {
-            assertionFailure("Error signing in: \(error.localizedDescription)")
             return
         }
         guard let user = user
             else {return}
-        
+        let userDefault = UserDefaults.standard.set(true, forKey: "loggedin")
+        UserDefaults.standard.synchronize()
+    
+
+        print (user)
         let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
         if let initialViewController = storyboard.instantiateInitialViewController() {
-        self.view.window?.rootViewController = initialViewController
-        self.view.window?.makeKeyAndVisible()
+            self.view.window?.rootViewController = initialViewController
+            self.view.window?.makeKeyAndVisible()
+            } else {
         }
-   
     }
 }
 
