@@ -45,6 +45,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.11)
+  - SearchTextField (1.1.2)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - FirebaseUI/Auth
+  - SearchTextField
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -70,8 +72,9 @@ SPEC CHECKSUMS:
   FirebaseUI: 5ebebe2c096c71f20abd1d43d0388958373bdaa0
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
+  SearchTextField: 98d9d9577ab9cbf0a306e300911224d28c4c43f5
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 63c28022d5269607d0371ba04375de25c2b51697
+PODFILE CHECKSUM: 425d0c30ceb9ee0c8551e5fd5497f3842e641c3f
 
 COCOAPODS: 1.2.1

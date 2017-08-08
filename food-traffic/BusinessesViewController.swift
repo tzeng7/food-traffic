@@ -16,6 +16,7 @@ class BusinessesViewController: UITableViewController {
     var entry: String?
     var latitude: Double = 0.0
     var longitude: Double = 0.0
+    
     override func viewDidLoad() {
         let sharedInstance = YelpAPIService.sharedInstance
         if let entry = entry {
@@ -81,8 +82,16 @@ class BusinessesViewController: UITableViewController {
             cell.checkInLabel.text = business.busy.rawValue
             if cell.checkInLabel.text == "Busy" {
                 cell.checkInLabel.textColor = UIColor.red
+                cell.checkInLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
             } else if cell.checkInLabel.text == "Not Busy" {
-                cell.checkInLabel.textColor = UIColor.green
+                cell.checkInLabel.textColor = UIColor(rgb: 0x009900)
+                cell.checkInLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+
+
+            } else if cell.checkInLabel.text == "No Data" {
+                cell.checkInLabel.textColor = UIColor.black
+                cell.checkInLabel.font = UIFont.systemFont(ofSize: 12.0)
+
             }
         }
         

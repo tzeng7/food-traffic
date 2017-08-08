@@ -8,20 +8,44 @@
 
 import UIKit
 import CoreLocation
+import Firebase
+import FirebaseAuthUI
+import FirebaseAuth
+import FirebaseAnalytics
+
 class SearchViewController: UIViewController, CLLocationManagerDelegate, UITextFieldDelegate {
 
     var arr = ["Tacos?", "Boba?", "Fast Food?", "Italian?", "Indian?", "Mediterranean?", "Thai?", "Japanese?", "Mexican?", "Chinese?"]
     var index = 0
     var latitude = 0.0
     var longitude = 0.0
+    var term: String?
+    var terms: [String]?
     let locationMgr = CLLocationManager()
-    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var searchField: AutoCompleteTextField!
     @IBOutlet weak var suggestionLabel: UILabel!
     @IBOutlet weak var peopleGif: UIImageView!
+    var responseData:NSMutableData?
+    var dataTask:URLSessionDataTask?
+    
+    @IBAction func logOutButtonTapped(_ sender: UIButton) {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "loggedin")
+        UserDefaults.standard.synchronize()
+        let storyboard = UIStoryboard(name: "Login", bundle: .main)
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            self.view.window?.rootViewController = initialViewController
+            self.view.window?.makeKeyAndVisible()
+        }
+
+    }
 
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        //configureTextField()
+        handleTextFieldInterfaces()
         getLocation()
         self.searchField.delegate = self
         peopleGif.loadGif(name: "giphy")
@@ -29,6 +53,10 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate, UITextF
         
 
         // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        searchField.text = ""
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,7 +102,6 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate, UITextF
         let status = CLLocationManager.authorizationStatus()
         if status == .notDetermined {
             locationMgr.requestWhenInUseAuthorization()
-            return
         }
         if status == .denied || status == .restricted {
             let alert = UIAlertController(title: "Location Services Disabled", message: "Please enable Location Services in Settings", preferredStyle: .alert)
@@ -96,4 +123,43 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate, UITextF
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error \(error)")
     }
+    
+    func configureTextField(){
+        searchField.autoCompleteTextFont = UIFont(name: "Helvetica", size: 12.0)!
+        searchField.autoCompleteCellHeight = 35.0
+        searchField.maximumAutoCompleteCount = 20
+        searchField.hidesWhenSelected = true
+        searchField.hidesWhenEmpty = true
+        searchField.enableAttributedText = true
+        var attributes = [String:AnyObject]()
+        attributes[NSForegroundColorAttributeName] = UIColor.black
+        attributes[NSFontAttributeName] = UIFont(name: "Helvetica", size: 12.0)
+        searchField.autoCompleteAttributes = attributes
+    }
+    
+    func handleTextFieldInterfaces(){
+        searchField.onTextChange = {[weak self] text in
+            print (text)
+            if !text.isEmpty{
+                if let dataTask = self?.dataTask {
+                    dataTask.cancel()
+                }
+                let sharedInstance = YelpAPIService.sharedInstance
+                print ("hi")
+                sharedInstance.autocomplete(text: text)
+                    { (terms) in
+                        print ("result")
+                        print(terms)
+                        self?.terms = terms
+                        self?.searchField.autoCompleteStrings = terms
+                    }
+                    
+                }
+        }
+        searchField.onSelect = {[weak self] text, indexpath in
+            self?.searchField.text = text
+            }
+    }
+
+
  }

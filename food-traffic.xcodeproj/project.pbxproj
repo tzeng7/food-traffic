@@ -22,10 +22,13 @@
 		0A1FC0801F226D0400D5F2E3 /* BusinessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC07F1F226D0400D5F2E3 /* BusinessService.swift */; };
 		0A1FC0841F22B1C200D5F2E3 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */; };
 		0A1FC0861F22B22000D5F2E3 /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A1FC0851F22B22000D5F2E3 /* giphy.gif */; };
+		0A6D7B611F30E41600AF7C85 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D7B601F30E41600AF7C85 /* RoundButton.swift */; };
+		0A7377251F2C69390002EC22 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7377241F2C69390002EC22 /* UIColor+Hex.swift */; };
 		0A7899CF1F18B53400EF1784 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */; };
 		0A9D18311F173978009F5B61 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9D18301F173978009F5B61 /* Login.storyboard */; };
 		0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18341F1739E9009F5B61 /* LoginViewController.swift */; };
 		0A9D18431F174C24009F5B61 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D18421F174C24009F5B61 /* SearchViewController.swift */; };
+		0AA5DAD91F34F68000F2D3E2 /* AutoCompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5DAD81F34F68000F2D3E2 /* AutoCompleteTextField.swift */; };
 		5E7EB0E6E8ED097F67D1F01F /* Pods_food_traffic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */; };
 		CEB8DF521F29972600A0413F /* realvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CEB8DF511F29972600A0413F /* realvideo.mp4 */; };
 /* End PBXBuildFile section */
@@ -48,10 +51,13 @@
 		0A1FC07F1F226D0400D5F2E3 /* BusinessService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessService.swift; sourceTree = "<group>"; };
 		0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		0A1FC0851F22B22000D5F2E3 /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		0A6D7B601F30E41600AF7C85 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		0A7377241F2C69390002EC22 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		0A7899CE1F18B53400EF1784 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
 		0A9D18301F173978009F5B61 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		0A9D18341F1739E9009F5B61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A9D18421F174C24009F5B61 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0AA5DAD81F34F68000F2D3E2 /* AutoCompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteTextField.swift; sourceTree = "<group>"; };
 		3625DB6C9706E41BF807F57F /* Pods-food-traffic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.debug.xcconfig"; sourceTree = "<group>"; };
 		43278AAD11EDF7EA701C40C8 /* Pods_food_traffic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_traffic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57E29A0C65D3C35C1E51C30 /* Pods-food-traffic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food-traffic.release.xcconfig"; path = "Pods/Target Support Files/Pods-food-traffic/Pods-food-traffic.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +126,8 @@
 				CEB8DF511F29972600A0413F /* realvideo.mp4 */,
 				0A1FC0851F22B22000D5F2E3 /* giphy.gif */,
 				0A131D131F1738DA006FC6E3 /* AppDelegate.swift */,
+				0A6D7B601F30E41600AF7C85 /* RoundButton.swift */,
+				0AA5DAD81F34F68000F2D3E2 /* AutoCompleteTextField.swift */,
 				CEFA4A9D1F2A51A900CDA55E /* Supporting */,
 				CEFA4A9C1F2A519F00CDA55E /* Extensions */,
 				0A10959E1F18887500AC17F5 /* Service */,
@@ -194,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1FC0831F22B1C200D5F2E3 /* Swift+Gif.swift */,
+				0A7377241F2C69390002EC22 /* UIColor+Hex.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -336,13 +345,16 @@
 			files = (
 				0A1095921F17E71800AC17F5 /* BusinessCell.swift in Sources */,
 				0A1095991F18880300AC17F5 /* Business.swift in Sources */,
+				0A6D7B611F30E41600AF7C85 /* RoundButton.swift in Sources */,
 				0A9D18431F174C24009F5B61 /* SearchViewController.swift in Sources */,
 				0A1095971F18858A00AC17F5 /* BusinessesViewController.swift in Sources */,
 				0A1FC0841F22B1C200D5F2E3 /* Swift+Gif.swift in Sources */,
+				0AA5DAD91F34F68000F2D3E2 /* AutoCompleteTextField.swift in Sources */,
 				0A1FC0801F226D0400D5F2E3 /* BusinessService.swift in Sources */,
 				0A1095A01F18888200AC17F5 /* YelpAPIService.swift in Sources */,
 				0A9D18351F1739E9009F5B61 /* LoginViewController.swift in Sources */,
 				0A7899CF1F18B53400EF1784 /* AccessTokenAdapter.swift in Sources */,
+				0A7377251F2C69390002EC22 /* UIColor+Hex.swift in Sources */,
 				0A131D161F1738DA006FC6E3 /* ViewController.swift in Sources */,
 				0A1292B01F1FBCD5007887DF /* BusinessViewController.swift in Sources */,
 				0A131D141F1738DA006FC6E3 /* AppDelegate.swift in Sources */,

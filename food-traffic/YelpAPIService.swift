@@ -17,6 +17,7 @@ class YelpAPIService {
     static let sharedInstance = YelpAPIService()
     
     let endpoint = "https://api.yelp.com/v3/businesses/search"
+    let autocompleteEndpoint = "https://api.yelp.com/v3/autocomplete"
     var sessionManager:Alamofire.SessionManager
     
     init() {
@@ -64,10 +65,32 @@ class YelpAPIService {
         }
     }
     
+    func autocomplete (text: String, completion: @escaping (([String]?) -> Void)) {
+        let parameters: [String: String] = ["text": text]
+        sessionManager.request(autocompleteEndpoint, method: .get, parameters: parameters).validate().responseJSON() { response in
+            switch response.result {
+            case .success:
+                //print (response.result.value)
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    print ("json is here \(json)")
+                    let autocompleteData = json["terms"].arrayValue
+//                    print (autocompleteData)
+                    var terms: [String] = []
+                    for term in autocompleteData {
+                        terms.append(term["text"].stringValue)
+//                        print (term["terms"]["text"].stringValue)
+                    }
+                
+                    completion(terms)
+                }
+            case .failure(let error):
+            
+                print(error)
+            }
+        
+        }
+    
     //Write a parser/converter
-    
-    
-    
-    
-    
+    }
 }

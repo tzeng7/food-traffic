@@ -94,14 +94,12 @@ extension LoginViewController: FUIAuthDelegate {
         let userDefault = UserDefaults.standard.set(true, forKey: "loggedin")
         UserDefaults.standard.synchronize()
     
-
         print (user)
         let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
-        if let initialViewController = storyboard.instantiateInitialViewController() {
-            self.view.window?.rootViewController = initialViewController
-            self.view.window?.makeKeyAndVisible()
-            } else {
-        }
+        let initialViewController = storyboard.instantiateInitialViewController()
+        self.view.window?.rootViewController = initialViewController
+        self.view.window?.makeKeyAndVisible()
+        
     }
 }
 

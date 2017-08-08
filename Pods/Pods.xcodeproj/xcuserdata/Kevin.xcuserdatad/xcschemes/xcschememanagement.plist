@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SearchTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,12 +57,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53614DE7F979D09EE660292E277B77E8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7ADCB73BCA5C1FD9CC1624C2F561E500</key>
+		<key>86315EFD00EF3F7326093E25A6EAC359</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC689B1617BAAEE79274130B175E61FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB0DAC23815C6906EA61097C6EC2E031</key>
 		<dict>
 			<key>primary</key>
 			<true/>

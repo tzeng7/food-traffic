@@ -16,12 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask(rawValue: UIInterfaceOrientationMask.portrait.rawValue)
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        UserDefaults.standard.value(forKey: "loggedin")
+//        UserDefaults.standard.value(forKey: "loggedin")
         if let userKey = UserDefaults.standard.value(forKey: "loggedin") as? Bool {
             if userKey {
                 let storyboard = UIStoryboard(name: "Businesses", bundle: .main)

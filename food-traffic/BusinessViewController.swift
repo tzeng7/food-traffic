@@ -23,6 +23,8 @@ class BusinessViewController: UIViewController {
     @IBOutlet weak var yesButton: UIButton!
     
     
+    
+    
     override func viewDidLoad() {
         self.restaurantLabel.text = self.business?.id
         let url = self.business?.image_url
@@ -34,12 +36,22 @@ class BusinessViewController: UIViewController {
         BusinessService.updateRating(business!, rating: 1, completion: { business in
             return
         })
-//        BusinessService.getRatings(business!)
+//        let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
+//        if let initialViewController = storyboard.instantiateInitialViewController() {
+//            self.view.window?.rootViewController = initialViewController
+//            self.view.window?.makeKeyAndVisible()
+//        }
     }
     @IBAction func noButtonTapped(_ sender: UIButton) {
         BusinessService.updateRating(business!, rating: 0, completion: {business in
             return
+            
         })
+//        let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
+//        if let initialViewController = storyboard.instantiateInitialViewController() {
+//            self.view.window?.rootViewController = initialViewController
+//            self.view.window?.makeKeyAndVisible()
+//        }
     }
     
     
