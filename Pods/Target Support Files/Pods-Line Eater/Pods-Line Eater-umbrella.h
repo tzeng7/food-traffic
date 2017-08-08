@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_food_trafficVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_food_trafficVersionString[];
+FOUNDATION_EXPORT double Pods_Line_EaterVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Line_EaterVersionString[];
 
