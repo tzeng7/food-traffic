@@ -14,13 +14,13 @@
         <!--Businesses-->
         <scene sceneID="X2w-eN-tbr">
             <objects>
-                <tableViewController storyboardIdentifier="Businesses" id="tkf-YW-Qyg" customClass="BusinessesViewController" customModule="food_traffic" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Businesses" id="tkf-YW-Qyg" customClass="BusinessesViewController" customModule="Line_Eater" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Bg-Er-Byd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="businessCell" rowHeight="110" id="hAI-Ze-ne0" customClass="BusinessCell" customModule="food_traffic" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="businessCell" rowHeight="110" id="hAI-Ze-ne0" customClass="BusinessCell" customModule="Line_Eater" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hAI-Ze-ne0" id="pJM-ta-Eu2">
@@ -54,7 +54,7 @@
                                             </constraints>
                                         </imageView>
                                         <stackView autoresizesSubviews="NO" opaque="NO" contentMode="top" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hQP-EB-LzF" userLabel="BusinessStack">
-                                            <rect key="frame" x="119" y="10" width="245.5" height="40"/>
+                                            <rect key="frame" x="119" y="10" width="246" height="40"/>
                                             <subviews>
                                                 <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business ID" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-3n-933">
                                                     <rect key="frame" x="0.0" y="0.0" width="83.5" height="18"/>
@@ -115,7 +115,7 @@
         <!--Search-->
         <scene sceneID="a1d-0S-XRa">
             <objects>
-                <viewController storyboardIdentifier="Search" id="mG2-mV-WvR" customClass="SearchViewController" customModule="food_traffic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Search" id="mG2-mV-WvR" customClass="SearchViewController" customModule="Line_Eater" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="83B-IR-1bI"/>
                         <viewControllerLayoutGuide type="bottom" id="i5i-h6-CiA"/>
@@ -136,7 +136,7 @@
                                         <color key="textColor" red="1" green="0.66666666669999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyW-Us-MYa" customClass="AutoCompleteTextField" customModule="food_traffic" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyW-Us-MYa" customClass="AutoCompleteTextField" customModule="Line_Eater" customModuleProvider="target">
                                         <rect key="frame" x="50" y="63" width="275" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kg7-pA-cpY"/>
@@ -164,7 +164,7 @@
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0k-rK-bK6">
-                                <rect key="frame" x="67" y="447" width="240" height="100"/>
+                                <rect key="frame" x="67" y="437" width="240" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="M5b-vW-ZcM"/>
                                 </constraints>
@@ -175,7 +175,7 @@
                             <constraint firstItem="U0k-rK-bK6" firstAttribute="leading" secondItem="xRm-6L-aX2" secondAttribute="leadingMargin" constant="51" id="0yI-1i-A6f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U0k-rK-bK6" secondAttribute="trailing" constant="52" id="9QB-lQ-j16"/>
                             <constraint firstItem="UoW-qO-gIp" firstAttribute="centerX" secondItem="xRm-6L-aX2" secondAttribute="centerX" id="AfJ-ek-GV1"/>
-                            <constraint firstItem="i5i-h6-CiA" firstAttribute="top" secondItem="U0k-rK-bK6" secondAttribute="bottom" constant="120" id="hWp-aT-ujy"/>
+                            <constraint firstItem="i5i-h6-CiA" firstAttribute="top" secondItem="U0k-rK-bK6" secondAttribute="bottom" constant="130" id="hWp-aT-ujy"/>
                             <constraint firstItem="UoW-qO-gIp" firstAttribute="centerY" secondItem="xRm-6L-aX2" secondAttribute="centerY" constant="-50" id="mjS-v7-aZk"/>
                             <constraint firstItem="UoW-qO-gIp" firstAttribute="width" secondItem="xRm-6L-aX2" secondAttribute="width" id="mwK-QS-h57"/>
                         </constraints>
@@ -224,7 +224,7 @@
         <!--Business View Controller-->
         <scene sceneID="T4M-LP-21y">
             <objects>
-                <viewController storyboardIdentifier="Business" autoresizesArchivedViewToFullSize="NO" id="EWZ-KU-wp1" customClass="BusinessViewController" customModule="food_traffic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Business" autoresizesArchivedViewToFullSize="NO" id="EWZ-KU-wp1" customClass="BusinessViewController" customModule="Line_Eater" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Eua-1G-jc0"/>
                         <viewControllerLayoutGuide type="bottom" id="d8y-Cs-djl"/>
@@ -239,7 +239,7 @@
                                 <color key="textColor" red="1" green="0.66666666669999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjS-d0-NM1" customClass="RoundButton" customModule="food_traffic" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjS-d0-NM1" customClass="RoundButton" customModule="Line_Eater" customModuleProvider="target">
                                 <rect key="frame" x="88" y="507" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.86274509803921573" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -276,7 +276,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pES-v2-QA7">
                                 <rect key="frame" x="25" y="139" width="325" height="236"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haM-DF-r1C" customClass="RoundButton" customModule="food_traffic" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haM-DF-r1C" customClass="RoundButton" customModule="Line_Eater" customModuleProvider="target">
                                 <rect key="frame" x="220" y="507" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="No">

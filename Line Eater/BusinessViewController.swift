@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 import Alamofire
 import AlamofireImage
-
+import Firebase
+import FirebaseAnalytics
 class BusinessViewController: UIViewController {
     
     
@@ -36,25 +37,14 @@ class BusinessViewController: UIViewController {
         BusinessService.updateRating(business!, rating: 1, completion: { business in
             return
         })
-//        let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
-//        if let initialViewController = storyboard.instantiateInitialViewController() {
-//            self.view.window?.rootViewController = initialViewController
-//            self.view.window?.makeKeyAndVisible()
-//        }
+        Analytics.logEvent("is_busy", parameters: nil)
+        navigationController?.popViewController(animated: true)
     }
     @IBAction func noButtonTapped(_ sender: UIButton) {
         BusinessService.updateRating(business!, rating: 0, completion: {business in
             return
-            
         })
-//        let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
-//        if let initialViewController = storyboard.instantiateInitialViewController() {
-//            self.view.window?.rootViewController = initialViewController
-//            self.view.window?.makeKeyAndVisible()
-//        }
+        Analytics.logEvent("not_busy", parameters: nil)
+        navigationController?.popViewController(animated: true)
     }
-    
-    
-    
-    
 }

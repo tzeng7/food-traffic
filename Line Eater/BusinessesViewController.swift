@@ -39,10 +39,9 @@ class BusinessesViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         self.recalculateBusy()
-        super.viewWillAppear(animated)
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,7 +74,10 @@ class BusinessesViewController: UITableViewController {
             
             let thumbnail = cell.thumbImage
             let url = business.image_url
-            thumbnail!.af_setImage(withURL: URL(string: url)!)
+            if url != "" {
+                thumbnail!.af_setImage(withURL: URL(string: url)!)
+            }
+            
             
             cell.businessLabel.text = business.id
             cell.typeLabel.text = business.type

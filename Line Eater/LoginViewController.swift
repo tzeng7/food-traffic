@@ -11,6 +11,8 @@ import FirebaseAuthUI
 import FirebaseAuth
 import FirebaseDatabase
 import AVFoundation
+import Firebase
+import FirebaseAnalytics
 class LoginViewController: UIViewController {
 
     var Player: AVPlayer!
@@ -93,7 +95,8 @@ extension LoginViewController: FUIAuthDelegate {
             else {return}
         let userDefault = UserDefaults.standard.set(true, forKey: "loggedin")
         UserDefaults.standard.synchronize()
-    
+        
+        Analytics.logEvent("log_in", parameters: nil)
         print (user)
         let storyboard = UIStoryboard(name: "Businesses", bundle: .main)
         let initialViewController = storyboard.instantiateInitialViewController()

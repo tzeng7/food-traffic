@@ -84,6 +84,7 @@ class SearchViewController: UIViewController, CLLocationManagerDelegate, UITextF
         self.view.endEditing(true)
         performSegue(withIdentifier: "toBusinessesList", sender: searchField)
         resignFirstResponder()
+        Analytics.logEvent("search", parameters: nil)
         return true
     }
     
